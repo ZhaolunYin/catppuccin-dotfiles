@@ -1,8 +1,8 @@
 local home = os.getenv("HOME") or "/home/zhaolun"
 
-require("modules.style")
+require("hyprland.style")
 
-require("modules.monitors")
+require("hyprland.monitors")
 
 -- Environment Variables
 hl.env("XCURSOR_SIZE", "36")
@@ -41,8 +41,8 @@ hl.config({
     },
 })
 
-hl.workspace_rule({ workspace = "r[1-4]", layout = "dwindle" })
-hl.workspace_rule({ workspace = "r[5-8]", layout = "scrolling" })
+hl.workspace_rule({ workspace = "r[1-3]", layout = "dwindle" })
+hl.workspace_rule({ workspace = "r[4-8]", layout = "scrolling" })
 hl.workspace_rule({ workspace = "9", layout = "monocle" })
 
 hl.device({
@@ -55,7 +55,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("nm-applet")
     hl.exec_cmd("hypridle")
     hl.exec_cmd("hyprpaper")
-    hl.exec_cmd("quickshell")
+    hl.exec_cmd("waybar")
     hl.exec_cmd("dunst")
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("systemctl --user restart wireplumber")
@@ -71,4 +71,4 @@ hl.on("hyprland.shutdown", function()
     hl.exec_cmd("exit")
 end)
 
-require("modules.binds")
+require("hyprland.binds")

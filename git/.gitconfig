@@ -2,3 +2,6 @@
 	excludesfile = ~/.gitignore_global
 [init]
 	defaultBranch = main
+[user]
+	email = yinzhaolun2012@gmail.com
+	name = Zhaolun Yin
