@@ -54,8 +54,8 @@ if command -v nvim > /dev/null; then
     export MANPAGER='nvim +Man!'
 else
     echo "⚠️  Neovim not installed. Run: sudo pacman -S neovim"
-    export EDITOR='nano'
-    export VISUAL='nano'
+    export EDITOR='vim'
+    export VISUAL='vim'
 fi
 
 # ========== ENHANCED HISTORY SETTINGS ==========

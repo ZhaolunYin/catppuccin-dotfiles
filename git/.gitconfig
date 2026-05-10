@@ -1,8 +1,0 @@
-[core]
-	excludesfile = ~/.gitignore_global
-	ignorecase = false
-[init]
-	defaultBranch = main
-[user]
-	email = yinzhaolun2012@gmail.com
-	name = Zhaolun Yin
