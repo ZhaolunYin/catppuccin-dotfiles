@@ -1,5 +1,3 @@
-local home = os.getenv("HOME") or "/home/zhaolun"
-
 require("hyprland.style")
 
 require("hyprland.monitors")
@@ -71,6 +69,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("surge server start")
     hl.exec_cmd('theclicker run -d"/dev/input/ak820-kbd" -c25 -C0 -l67')
     hl.exec_cmd('theclicker run -d"/dev/input/by-path/platform-i8042-serio-0-event-kbd" -c25 -C0 -l67')
+    hl.exec_cmd("kitty")
 end)
 
 hl.on("hyprland.shutdown", function()
