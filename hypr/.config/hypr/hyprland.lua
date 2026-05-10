@@ -6,7 +6,9 @@ require("hyprland.monitors")
 
 -- Environment Variables
 hl.env("XCURSOR_SIZE", "36")
+hl.env("XCURSOR_THEME", "catppuccin-mocha-mauve-cursors")
 hl.env("HYPRCURSOR_SIZE", "36")
+hl.env("HYPRCURSOR_THEME", "catppuccin-mocha-mauve-cursors")
 hl.env("WLR_NO_HARDWARE_CURSORS", "1")
 hl.env("LIBVA_DRIVER_NAME", "amd")
 hl.env("GNOME_KEYRING_CONTROL", "/run/user/1000/keyring")
@@ -17,7 +19,10 @@ hl.config({
     },
     misc = {
         force_default_wallpaper = -1,
-        disable_hyprland_logo = false,
+        disable_hyprland_logo = true,
+        mouse_move_enables_dpms = true,
+        key_press_enables_dpms  = true,
+        allow_session_lock_restore = true,
     },
     xwayland = {
         force_zero_scaling = true,
@@ -60,6 +65,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("systemctl --user restart wireplumber")
     hl.exec_cmd("systemctl --user import-environment")
+    hl.exec_cmd("wl-clip-persist --clipboard regular")
     hl.exec_cmd("gnome-keyring-daemon --start --components=secrets")
     hl.exec_cmd("fcitx5 -d")
     hl.exec_cmd("surge server start")

@@ -31,7 +31,7 @@
         "cpu",
         "memory",
         "packages",
-        "battery",
+        "localip",
         {
             "type": "colors",
             "key": "Colors", // For printing icon

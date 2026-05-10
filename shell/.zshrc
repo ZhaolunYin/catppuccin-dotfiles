@@ -84,7 +84,7 @@ alias tree='eza --icons --group-directories-first -T'
 
 alias cat='bat -p --theme="OneHalfDark"'
 alias less='bat --paging=always'
-alias grep='rg --color=auto'
+alias grep='rg --color=auto --engine=auto'
 alias find='fd'  # If fd is installed
 alias du='dust'
 alias df='duf'
@@ -92,6 +92,7 @@ alias ps='procs'
 alias top='btop'
 alias speedtest='speedtest-tui'
 alias f='fastfetch'
+alias icat='kitten icat'
 
 # Set C++ standard to 23
 alias g++='g++ --std=c++23'

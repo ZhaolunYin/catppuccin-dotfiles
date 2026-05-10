@@ -1,6 +1,6 @@
 -- Monitors
 hl.monitor({
-    output = "DVI-I-1",
+    output = "desc: Dell Inc. DELL P2714H NV2C44CM1BWS",
     mode = "1920x1080@60",
     position = "0x0",
     scale = 1,
