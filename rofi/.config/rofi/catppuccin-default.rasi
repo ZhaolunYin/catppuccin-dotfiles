@@ -37,6 +37,7 @@ element {
     cursor:  pointer;
     spacing: 5px ;
     border:  0;
+    border-radius: 1px;
 }
 element normal.normal {
     background-color: @normal-background;
@@ -90,6 +91,7 @@ window {
     padding:          5;
     background-color: @background;
     border:           1;
+    border-radius:    6px;
 }
 mainbox {
     padding: 0;
@@ -160,6 +162,7 @@ entry {
     spacing:           0;
     placeholder-color: Gray;
     placeholder:       "Type to filter";
+    border-radius:     6px;
 }
 prompt {
     spacing:    0;

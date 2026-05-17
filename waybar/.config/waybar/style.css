@@ -63,6 +63,7 @@ window#waybar {
   padding: 6px 10px;
   margin: 4px;
   border-radius: 8px;
+  min-width: 16px;
 
   color: @crust;
   background: @yellow;

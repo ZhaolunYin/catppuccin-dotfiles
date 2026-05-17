@@ -197,8 +197,6 @@ if command -v fzf > /dev/null; then
     bindkey '^R' fzf-history-widget
 fi
 
-# Enable npm and cargo packages
-export PATH="$HOME/.npm-global/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
